@@ -1,5 +1,7 @@
 body{
     background: #222;
+    color: white;
+    font-family:"Times New Roman", Times, serif;
 }
 
 img{
@@ -8,11 +10,18 @@ img{
     border-radius: 4px;
 }
 
+.hero{
+    background-image: url(images/bg1.jpg);
+    height: 400px;
+    background-position: center;
+}
+
 div.page-nav{
     height:50px;
     font-size: 25px;
     text-align:center;
     margin-top:5px;
+    text-transform: uppercase;
 }
 
 div.page-nav ul{
@@ -22,7 +31,7 @@ div.page-nav ul{
 
 div.page-nav ul li{
     display: inline-block;
-    border-right: 1px solid white;
+    border-right: 3px solid white;
     padding-right: 8px;
 }
 
@@ -31,7 +40,19 @@ div.page-nav ul li:last-child{
 }
 
 div.page-header{
+    margin-top: 200px;
     text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+}
+
+div.page-nav a{
+    text-decoration: none;
+    color: white;
+}
+
+div.page-nav a:hover{
+    text-decoration: none;
 }
 
 .timeline {
