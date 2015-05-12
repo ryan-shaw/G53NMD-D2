@@ -159,12 +159,20 @@ ul.timeline{
     border-bottom: 14px solid transparent;
     content: " ";
 }
+
+.timeline-panel img{
+    margin-bottom:5px;
+}
 .extras{
     color:lightblue;
 }
 .extras .comments{
     float:left;
     padding-top:6px;
+}
+
+.extras .comments a{
+    color:lightblue;
 }
 
 .extras .social{
