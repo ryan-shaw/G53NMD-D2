@@ -7,6 +7,7 @@ body{
 
 div.page1{
     background-image: url(images/bg1.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     z-index: 2;
 
