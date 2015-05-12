@@ -18,7 +18,8 @@ div.page2{
     background-size:cover;
     background-repeat: no-repeat;
     z-index: 1;
-    box-shadow: inset 0 10px 20px -10px black;
+    box-shadow: inset 0 10px 20px -10px black, inset 0 -10px 20px -10px black;
+
 }
 
 h1,h2,h3,h4{
@@ -66,6 +67,7 @@ div.page-header{
 
 div.page-header h1{
     margin-left: 100px;
+    text-transform:uppercase;
 }
 
 div.page-header img{
@@ -77,11 +79,11 @@ div.page-header img{
 
 div.page-nav a{
     text-decoration: none;
-    color:green;
+    color:black;
 }
 
 div.page-nav a:hover{
-    text-decoration: none;
+    text-decoration:underline;
 }
 
 .timeline {
@@ -236,4 +238,23 @@ ul.timeline{
 }
 .timeline li:after {
   clear: both;
+}
+footer{
+    color:black;
+    height:200px;
+    padding:20px;
+}
+
+footer .col-md-4{
+    border-right: 1px solid black;
+    height:100px;
+}
+
+footer .col-md-4:first-child{
+    border-left: 1px solid black;
+}
+
+.social i{
+    margin-right: 5px;
+    float: right;
 }
