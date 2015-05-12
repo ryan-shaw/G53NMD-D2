@@ -1,7 +1,27 @@
 body{
-    background: #222;
     color: white;
     font-family:"Times New Roman", Times, serif;
+
+
+}
+
+div.page1{
+    background-image: url(images/bg1.jpg);
+    background-repeat: no-repeat;
+    z-index: 2;
+
+}
+
+div.page2{
+    background-image:url(images/b2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    box-shadow: inset 0 10px 20px -10px black;
+}
+
+h1,h2,h3,h4{
+    color: black;
 }
 
 img{
@@ -11,9 +31,9 @@ img{
 }
 
 .hero{
-    background-image: url(images/bg1.jpg);
-    height: 400px;
-    background-position: center;
+    /*background-color:grey;*/
+    height: 200px;
+    /*background-position: center;*/
 }
 
 div.page-nav{
@@ -31,7 +51,7 @@ div.page-nav ul{
 
 div.page-nav ul li{
     display: inline-block;
-    border-right: 3px solid white;
+    border-right: 2px solid #1db200;
     padding-right: 8px;
 }
 
@@ -40,15 +60,23 @@ div.page-nav ul li:last-child{
 }
 
 div.page-header{
-    margin-top: 200px;
-    text-align: center;
-    text-transform: uppercase;
-    border-bottom: 2px solid #fff;
+    border-bottom: none;
+}
+
+div.page-header h1{
+    margin-left: 100px;
+}
+
+div.page-header img{
+    width: 90px;
+    border-radius: 0px;
+    float:left;
 }
 
 div.page-nav a{
+    color: #2aff00;
+
     text-decoration: none;
-    color: white;
 }
 
 div.page-nav a:hover{
@@ -56,9 +84,13 @@ div.page-nav a:hover{
 }
 
 .timeline {
+    border-top: 2px solid black;
     list-style: none;
     padding: 20px 0 20px;
     position: relative;
+}
+.timeline.page{
+    border-top: none;
 }
 
 .timeline:before {
@@ -67,9 +99,13 @@ div.page-nav a:hover{
     position: absolute;
     content: " ";
     width: 3px;
-    background-color: #eee;
+    background-color: black;
     left: 50%;
     margin-left: -1.5px;
+}
+
+ul.timeline{
+    margin-bottom: 0px;
 }
 
 .timeline li {
@@ -80,13 +116,12 @@ div.page-nav a:hover{
 .timeline-heading h3{
     margin-top:0px;
     font-size:18px;
-    color: orange;
 }
 
 .timeline li .timeline-panel {
   width: 46%;
   float: left;
-  background: rgba(255,255,255,0.1);
+  background: #666;
   color:white;
   padding: 20px;
   position: relative;
@@ -114,8 +149,8 @@ div.page-nav a:hover{
     right: -14px;
     display: inline-block;
     border-top: 14px solid transparent;
-    border-left: 14px solid rgba(255,255,255,0.1);
-    border-right: 0 solid rgba(255,255,255,0.1);
+    border-left: 14px solid #666;
+    border-right: 0 solid #666;
     border-bottom: 14px solid transparent;
     content: " ";
 }
